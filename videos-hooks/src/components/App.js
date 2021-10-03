@@ -5,12 +5,12 @@ import VideoDetail from "./VideoDetail";
 import useVideos from "../hooks/useVideos";
 
 const App = () => {
-const [selectedVideo, setSelectedVideo] = useState(null);
-const [videos, search] = useVideos('youtube');
+    const [selectedVideo, setSelectedVideo] = useState(null);
+    const [videos, search] = useVideos('youtube');
 
-useEffect(() => {
-    setSelectedVideo(videos[0]);
-}, [videos]);
+    useEffect(() => {
+        setSelectedVideo(videos[0]);
+    }, [videos]);
 
     return (
         <div className="ui container">

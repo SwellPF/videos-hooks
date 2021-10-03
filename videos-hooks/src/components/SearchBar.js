@@ -7,6 +7,7 @@ const SearchBar = ({onFormSubmit}) => {
         event.preventDefault();
         onFormSubmit(term);
     };
+    
     return (
         <div className="ui segment search-bar">
             <form onSubmit={onSubmit} className="ui form">
